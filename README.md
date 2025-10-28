@@ -602,7 +602,10 @@ GET /api/companies/{company_id}
 GET /api/metrics/quality
 ```
 
-#   a u s t r a l i a n - c o m p a n y - p i p e l i n e _ p r o j e c t  
- #   a u s t r a l i a n - c o m p a n y - p i p e l i n e _ p r o j e c t _ f i r m a b l e  
- #   a u s t r a l i a n - c o m p a n y - p i p e l i n e _ f i r m a b l e  
+#   a u s t r a l i a n - c o m p a n y - p i p e l i n e _ p r o j e c t 
+ 
+ #   a u s t r a l i a n - c o m p a n y - p i p e l i n e _ p r o j e c t _ f i r m a b l e 
+ 
+ #   a u s t r a l i a n - c o m p a n y - p i p e l i n e _ f i r m a b l e 
+ 
  
