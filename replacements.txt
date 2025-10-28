@@ -1,0 +1,14 @@
+﻿regex:github_pat_[A-Za-z0-9_]+
+REDACTED
+
+regex:sk-ant-[A-Za-z0-9_\-]+
+REDACTED
+
+regex:sk-openai-[A-Za-z0-9_\-]+
+REDACTED
+
+regex:ANTHROPIC_API_KEY\s*=\s*.*$
+ANTHROPIC_API_KEY=REDACTED
+
+regex:OPENAI_API_KEY\s*=\s*.*$
+OPENAI_API_KEY=REDACTED

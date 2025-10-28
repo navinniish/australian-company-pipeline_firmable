@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/australian_company_pipeline.egg-info/PKG-INFO
+src/australian_company_pipeline.egg-info/SOURCES.txt
+src/australian_company_pipeline.egg-info/dependency_links.txt
+src/australian_company_pipeline.egg-info/entry_points.txt
+src/australian_company_pipeline.egg-info/not-zip-safe
+src/australian_company_pipeline.egg-info/requires.txt
+src/australian_company_pipeline.egg-info/top_level.txt

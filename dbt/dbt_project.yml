@@ -1,0 +1,68 @@
+name: 'australian_companies'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'australian_companies'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuring models
+models:
+  australian_companies:
+    # Applies to all files under models/
+    +materialized: table
+    staging:
+      # Applies to all files under models/staging/
+      +materialized: view
+      +schema: staging_dbt
+    marts:
+      # Applies to all files under models/marts/
+      +materialized: table
+      +schema: marts
+    analytics:
+      # Applies to all files under models/analytics/
+      +materialized: table
+      +schema: analytics
+
+# Test configurations
+tests:
+  +store_failures: true
+  +schema: test_failures
+
+# Snapshot configurations
+snapshots:
+  +target_schema: snapshots
+  +strategy: timestamp
+  +updated_at: updated_at
+
+# Seeds configurations
+seeds:
+  australian_companies:
+    +schema: seeds
+
+# Variables for the project
+vars:
+  # Data quality thresholds
+  min_data_quality_score: 0.3
+  high_quality_threshold: 0.8
+  
+  # Date ranges for incremental models
+  lookback_days: 7
+  
+  # Entity matching thresholds
+  min_confidence_score: 0.6
+
+# Documentation
+docs-paths: ["docs"]

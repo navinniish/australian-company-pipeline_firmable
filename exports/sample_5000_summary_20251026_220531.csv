@@ -1,0 +1,18 @@
+category,metric,value,description
+processing,total_companies,5000,Count of total companies
+processing,companies_with_websites,3792,Count of companies with websites
+processing,companies_with_social_media,4973,Count of companies with social media
+processing,high_quality_companies,1935,Count of high quality companies
+quality,avg_data_quality_score,0.7828774000000001,Data quality: avg data quality score
+quality,avg_digital_maturity,0.6251898,Data quality: avg digital maturity
+quality,website_coverage_percentage,0.7584,Data quality: website coverage percentage
+quality,social_media_coverage_percentage,0.9946,Data quality: social media coverage percentage
+enhancement_postcode_validation,records_validated,5000,postcode_validation: records validated
+enhancement_postcode_validation,corrections_applied,56,postcode_validation: corrections applied
+enhancement_postcode_validation,success_rate,0.938,postcode_validation: success rate
+enhancement_social_media_extraction,companies_analyzed,5000,social_media_extraction: companies analyzed
+enhancement_social_media_extraction,social_profiles_found,4973,social_media_extraction: social profiles found
+enhancement_social_media_extraction,total_platforms_detected,20841,social_media_extraction: total platforms detected
+enhancement_social_media_extraction,avg_platforms_per_company,4.1682,social_media_extraction: avg platforms per company
+enhancement_llm_concurrency,concurrent_requests,15,llm_concurrency: concurrent requests
+enhancement_llm_concurrency,performance_improvement,30%,llm_concurrency: performance improvement

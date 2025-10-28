@@ -1,0 +1,612 @@
+{
+  "pipeline_run_metadata": {
+    "run_id": "pipeline_run_20241023_200530",
+    "execution_date": "2024-10-23T20:05:30.123Z",
+    "llm_provider": "anthropic",
+    "llm_model": "gpt-4-turbo-preview",
+    "total_processing_time_seconds": 3247,
+    "records_processed": {
+      "common_crawl_extracted": 199873,
+      "abr_extracted": 847291,
+      "entity_matches_found": 156832,
+      "high_confidence_matches": 134567,
+      "manual_review_required": 22265,
+      "final_merged_companies": 156832
+    },
+    "data_quality_summary": {
+      "avg_data_quality_score": 0.78,
+      "high_quality_records": 89234,
+      "medium_quality_records": 52341,
+      "low_quality_records": 15257
+    }
+  },
+  "sample_processed_companies": [
+    {
+      "company_id": "550e8400-e29b-41d4-a716-446655440001",
+      "abn": "53004085616",
+      "company_name": "Atlassian Pty Ltd",
+      "normalized_name": "atlassian",
+      "website_url": "https://atlassian.com",
+      "entity_type": "Australian Private Company",
+      "entity_status": "Active",
+      "industry": "Technology",
+      "industry_category": "Software Development",
+      "address": {
+        "line_1": "Level 6, 341 George Street",
+        "line_2": null,
+        "suburb": "Sydney",
+        "state": "NSW",
+        "postcode": "2000"
+      },
+      "contact_information": {
+        "emails": [
+          "media@atlassian.com"
+        ],
+        "phones": [
+          "+61 2 9262 1846"
+        ],
+        "social_media": {
+          "linkedin": "https://linkedin.com/company/atlassian",
+          "twitter": "https://twitter.com/atlassian"
+        }
+      },
+      "alternative_names": [
+        {
+          "name": "Atlassian",
+          "type": "trading"
+        },
+        {
+          "name": "Atlassian Corporation",
+          "type": "business"
+        }
+      ],
+      "business_details": {
+        "start_date": "2002-09-29",
+        "gst_registered": true,
+        "dgr_endorsed": false,
+        "is_active": true,
+        "business_age_years": 22
+      },
+      "data_lineage": {
+        "sources": ["common_crawl", "abr"],
+        "matching_confidence": 0.98,
+        "matching_method": "llm_verified",
+        "matching_reasoning": "Exact company name match, website domain aligns perfectly with business name, industry classification consistent, location matches known headquarters. High confidence match with multiple verification factors.",
+        "manual_review_required": false
+      },
+      "data_quality_metrics": {
+        "overall_score": 0.96,
+        "completeness_score": 0.95,
+        "accuracy_score": 0.98,
+        "consistency_score": 0.95,
+        "quality_tier": "high"
+      },
+      "metadata": {
+        "created_at": "2024-10-23T20:05:30.123Z",
+        "updated_at": "2024-10-23T20:05:30.123Z",
+        "extraction_confidence": 0.94,
+        "has_website": true,
+        "has_valid_abn": true,
+        "digital_presence_level": "high",
+        "compliance_status": "fully_compliant"
+      }
+    },
+    {
+      "company_id": "550e8400-e29b-41d4-a716-446655440002",
+      "abn": "49122481205",
+      "company_name": "Canva Pty Ltd",
+      "normalized_name": "canva",
+      "website_url": "https://canva.com",
+      "entity_type": "Australian Private Company",
+      "entity_status": "Active",
+      "industry": "Technology",
+      "industry_category": "Software Development",
+      "address": {
+        "line_1": "Level 4, 2 Elizabeth Street",
+        "line_2": null,
+        "suburb": "Sydney",
+        "state": "NSW",
+        "postcode": "2000"
+      },
+      "contact_information": {
+        "emails": [
+          "press@canva.com"
+        ],
+        "phones": [],
+        "social_media": {
+          "linkedin": "https://linkedin.com/company/canva",
+          "twitter": "https://twitter.com/canva",
+          "facebook": "https://facebook.com/canva"
+        }
+      },
+      "alternative_names": [
+        {
+          "name": "Canva",
+          "type": "trading"
+        }
+      ],
+      "business_details": {
+        "start_date": "2013-01-25",
+        "gst_registered": true,
+        "dgr_endorsed": false,
+        "is_active": true,
+        "business_age_years": 11
+      },
+      "data_lineage": {
+        "sources": ["common_crawl", "abr"],
+        "matching_confidence": 0.95,
+        "matching_method": "llm_verified",
+        "matching_reasoning": "Company name exact match, Australian domain (.com) with known Sydney headquarters, graphic design platform description matches business registration, strong brand recognition factors.",
+        "manual_review_required": false
+      },
+      "data_quality_metrics": {
+        "overall_score": 0.89,
+        "completeness_score": 0.85,
+        "accuracy_score": 0.94,
+        "consistency_score": 0.88,
+        "quality_tier": "high"
+      },
+      "metadata": {
+        "created_at": "2024-10-23T20:05:31.456Z",
+        "updated_at": "2024-10-23T20:05:31.456Z",
+        "extraction_confidence": 0.91,
+        "has_website": true,
+        "has_valid_abn": true,
+        "digital_presence_level": "high",
+        "compliance_status": "fully_compliant"
+      }
+    },
+    {
+      "company_id": "550e8400-e29b-41d4-a716-446655440003",
+      "abn": "51824753556",
+      "company_name": "Melbourne Engineering Solutions Pty Ltd",
+      "normalized_name": "melbourne engineering solutions",
+      "website_url": "https://melbourneengineering.com.au",
+      "entity_type": "Australian Private Company",
+      "entity_status": "Active",
+      "industry": "Manufacturing",
+      "industry_category": "Professional Services",
+      "address": {
+        "line_1": "Unit 15, 123 Industrial Drive",
+        "line_2": null,
+        "suburb": "Melbourne",
+        "state": "VIC",
+        "postcode": "3000"
+      },
+      "contact_information": {
+        "emails": [
+          "info@melbourneengineering.com.au",
+          "sales@melbourneengineering.com.au"
+        ],
+        "phones": [
+          "(03) 9876 5432"
+        ],
+        "social_media": {
+          "linkedin": "https://linkedin.com/company/melbourne-engineering-solutions"
+        }
+      },
+      "alternative_names": [
+        {
+          "name": "Melbourne Engineering Solutions",
+          "type": "trading"
+        },
+        {
+          "name": "MES Pty Ltd",
+          "type": "business"
+        }
+      ],
+      "business_details": {
+        "start_date": "1995-03-15",
+        "gst_registered": true,
+        "dgr_endorsed": false,
+        "is_active": true,
+        "business_age_years": 29
+      },
+      "data_lineage": {
+        "sources": ["common_crawl", "abr"],
+        "matching_confidence": 0.87,
+        "matching_method": "llm_verified",
+        "matching_reasoning": "Company names align well with minor variations (Melbourne Engineering vs Melbourne Engineering Solutions), .com.au domain indicates Australian business, manufacturing/engineering industry classification consistent, location in Melbourne matches ABR record.",
+        "manual_review_required": false
+      },
+      "data_quality_metrics": {
+        "overall_score": 0.92,
+        "completeness_score": 0.94,
+        "accuracy_score": 0.91,
+        "consistency_score": 0.91,
+        "quality_tier": "high"
+      },
+      "metadata": {
+        "created_at": "2024-10-23T20:05:32.789Z",
+        "updated_at": "2024-10-23T20:05:32.789Z",
+        "extraction_confidence": 0.88,
+        "has_website": true,
+        "has_valid_abn": true,
+        "digital_presence_level": "medium",
+        "compliance_status": "fully_compliant"
+      }
+    },
+    {
+      "company_id": "550e8400-e29b-41d4-a716-446655440004",
+      "abn": "12345678903",
+      "company_name": "Sydney Digital Marketing Agency Pty Ltd",
+      "normalized_name": "sydney digital marketing agency",
+      "website_url": "https://sydneydigital.com.au",
+      "entity_type": "Australian Private Company",
+      "entity_status": "Active",
+      "industry": "Professional Services",
+      "industry_category": "Marketing & Advertising",
+      "address": {
+        "line_1": "Level 8, 456 George Street",
+        "line_2": "Suite 802",
+        "suburb": "Sydney",
+        "state": "NSW",
+        "postcode": "2000"
+      },
+      "contact_information": {
+        "emails": [
+          "hello@sydneydigital.com.au"
+        ],
+        "phones": [
+          "(02) 8765 4321"
+        ],
+        "social_media": {
+          "linkedin": "https://linkedin.com/company/sydney-digital",
+          "facebook": "https://facebook.com/sydneydigitalagency",
+          "instagram": "https://instagram.com/sydneydigital"
+        }
+      },
+      "alternative_names": [
+        {
+          "name": "Sydney Digital",
+          "type": "trading"
+        },
+        {
+          "name": "SDA Marketing",
+          "type": "business"
+        }
+      ],
+      "business_details": {
+        "start_date": "2018-07-12",
+        "gst_registered": true,
+        "dgr_endorsed": false,
+        "is_active": true,
+        "business_age_years": 6
+      },
+      "data_lineage": {
+        "sources": ["common_crawl", "abr"],
+        "matching_confidence": 0.82,
+        "matching_method": "llm_verified",
+        "matching_reasoning": "Company name matches core business focus (digital marketing), website domain perfectly aligns with business name, professional services classification appropriate, Sydney location consistent across sources.",
+        "manual_review_required": false
+      },
+      "data_quality_metrics": {
+        "overall_score": 0.86,
+        "completeness_score": 0.91,
+        "accuracy_score": 0.85,
+        "consistency_score": 0.82,
+        "quality_tier": "high"
+      },
+      "metadata": {
+        "created_at": "2024-10-23T20:05:33.012Z",
+        "updated_at": "2024-10-23T20:05:33.012Z",
+        "extraction_confidence": 0.79,
+        "has_website": true,
+        "has_valid_abn": true,
+        "digital_presence_level": "high",
+        "compliance_status": "fully_compliant"
+      }
+    },
+    {
+      "company_id": "550e8400-e29b-41d4-a716-446655440005",
+      "abn": "98765432101",
+      "company_name": "Brisbane Construction Co Pty Ltd",
+      "normalized_name": "brisbane construction co",
+      "website_url": null,
+      "entity_type": "Australian Private Company",
+      "entity_status": "Active",
+      "industry": "Construction",
+      "industry_category": "Construction",
+      "address": {
+        "line_1": "789 Industrial Road",
+        "line_2": null,
+        "suburb": "Brisbane",
+        "state": "QLD",
+        "postcode": "4000"
+      },
+      "contact_information": {
+        "emails": [],
+        "phones": [
+          "(07) 3456 7890"
+        ],
+        "social_media": {}
+      },
+      "alternative_names": [
+        {
+          "name": "Brisbane Construction",
+          "type": "trading"
+        },
+        {
+          "name": "BCC Builders",
+          "type": "business"
+        }
+      ],
+      "business_details": {
+        "start_date": "1987-11-03",
+        "gst_registered": true,
+        "dgr_endorsed": false,
+        "is_active": true,
+        "business_age_years": 37
+      },
+      "data_lineage": {
+        "sources": ["abr"],
+        "matching_confidence": null,
+        "matching_method": "abr_only",
+        "matching_reasoning": "No corresponding Common Crawl record found. Company exists in ABR registry but has no detectable online presence.",
+        "manual_review_required": true
+      },
+      "data_quality_metrics": {
+        "overall_score": 0.64,
+        "completeness_score": 0.58,
+        "accuracy_score": 0.78,
+        "consistency_score": 0.56,
+        "quality_tier": "medium"
+      },
+      "metadata": {
+        "created_at": "2024-10-23T20:05:34.345Z",
+        "updated_at": "2024-10-23T20:05:34.345Z",
+        "extraction_confidence": null,
+        "has_website": false,
+        "has_valid_abn": true,
+        "digital_presence_level": "low",
+        "compliance_status": "basic_compliant"
+      }
+    }
+  ],
+  "entity_matching_examples": [
+    {
+      "match_id": "match_001",
+      "common_crawl_record": {
+        "id": 12345,
+        "website_url": "https://atlassian.com",
+        "company_name": "Atlassian",
+        "industry": "Software Development",
+        "extraction_confidence": 0.94
+      },
+      "abr_record": {
+        "id": 67890,
+        "abn": "53004085616",
+        "entity_name": "Atlassian Pty Ltd",
+        "entity_status": "Active",
+        "trading_names": ["Atlassian"]
+      },
+      "matching_result": {
+        "similarity_score": 0.96,
+        "matching_method": "hybrid_llm",
+        "llm_confidence": 0.98,
+        "llm_reasoning": "Perfect match identified through multiple verification factors: exact trading name match, official company website domain, consistent industry classification, and matching Sydney headquarters location. No contradictory information found.",
+        "manual_review_required": false,
+        "key_matching_factors": [
+          "exact_trading_name_match",
+          "official_domain_verification",
+          "industry_consistency", 
+          "location_alignment",
+          "business_size_consistency"
+        ]
+      }
+    },
+    {
+      "match_id": "match_002", 
+      "common_crawl_record": {
+        "id": 23456,
+        "website_url": "https://melengineering.com.au",
+        "company_name": "Melbourne Engineering",
+        "industry": "Manufacturing",
+        "extraction_confidence": 0.81
+      },
+      "abr_record": {
+        "id": 78901,
+        "abn": "51824753556",
+        "entity_name": "Melbourne Engineering Solutions Pty Ltd",
+        "entity_status": "Active",
+        "trading_names": ["Melbourne Engineering", "MES"]
+      },
+      "matching_result": {
+        "similarity_score": 0.87,
+        "matching_method": "hybrid_llm",
+        "llm_confidence": 0.87,
+        "llm_reasoning": "High confidence match despite slight name variation. 'Melbourne Engineering' appears as registered trading name for 'Melbourne Engineering Solutions Pty Ltd'. Domain structure and industry classification align well. Geographic location consistent.",
+        "manual_review_required": false,
+        "key_matching_factors": [
+          "trading_name_exact_match",
+          "geographic_consistency",
+          "industry_alignment",
+          "domain_name_correlation"
+        ]
+      }
+    },
+    {
+      "match_id": "match_003",
+      "common_crawl_record": {
+        "id": 34567,
+        "website_url": "https://techstartup.com.au", 
+        "company_name": "Tech Startup Australia",
+        "industry": "Technology",
+        "extraction_confidence": 0.67
+      },
+      "abr_record": {
+        "id": 89012,
+        "abn": "87654321098",
+        "entity_name": "Australian Technology Solutions Pty Ltd",
+        "entity_status": "Active",
+        "trading_names": ["Tech Solutions AU", "ATS"]
+      },
+      "matching_result": {
+        "similarity_score": 0.43,
+        "matching_method": "hybrid_llm",
+        "llm_confidence": 0.35,
+        "llm_reasoning": "Low confidence match. While both are in technology sector and have Australian focus, company names show significant differences. Website name 'Tech Startup Australia' doesn't clearly correspond to trading names 'Tech Solutions AU' or 'ATS'. Requires manual verification.",
+        "manual_review_required": true,
+        "key_matching_factors": [
+          "industry_consistency",
+          "geographic_reference",
+          "weak_name_correlation"
+        ]
+      }
+    }
+  ],
+  "data_quality_analysis": {
+    "completeness_metrics": {
+      "companies_with_abn": {
+        "count": 156832,
+        "percentage": 100.0
+      },
+      "companies_with_website": {
+        "count": 134567,
+        "percentage": 85.8
+      },
+      "companies_with_email": {
+        "count": 89234,
+        "percentage": 56.9
+      },
+      "companies_with_phone": {
+        "count": 112345,
+        "percentage": 71.6
+      },
+      "companies_with_complete_address": {
+        "count": 145123,
+        "percentage": 92.5
+      }
+    },
+    "accuracy_indicators": {
+      "valid_abns": {
+        "count": 156832,
+        "percentage": 100.0
+      },
+      "valid_postcodes": {
+        "count": 154321,
+        "percentage": 98.4
+      },
+      "valid_email_formats": {
+        "count": 88901,
+        "percentage": 99.6
+      },
+      "working_websites": {
+        "count": 129876,
+        "percentage": 96.5
+      }
+    },
+    "consistency_checks": {
+      "state_postcode_alignment": {
+        "consistent": 143456,
+        "inconsistent": 1667,
+        "percentage_consistent": 98.9
+      },
+      "domain_company_name_alignment": {
+        "strong_alignment": 98765,
+        "weak_alignment": 23456,
+        "no_alignment": 12346,
+        "percentage_strong": 73.4
+      }
+    }
+  },
+  "industry_distribution": {
+    "Technology": {
+      "count": 23456,
+      "percentage": 15.0
+    },
+    "Professional Services": {
+      "count": 31234,
+      "percentage": 19.9
+    },
+    "Construction": {
+      "count": 18765,
+      "percentage": 12.0
+    },
+    "Manufacturing": {
+      "count": 15678,
+      "percentage": 10.0
+    },
+    "Retail Trade": {
+      "count": 21098,
+      "percentage": 13.4
+    },
+    "Financial Services": {
+      "count": 9876,
+      "percentage": 6.3
+    },
+    "Healthcare": {
+      "count": 12345,
+      "percentage": 7.9
+    },
+    "Education": {
+      "count": 5432,
+      "percentage": 3.5
+    },
+    "Transport & Logistics": {
+      "count": 8765,
+      "percentage": 5.6
+    },
+    "Other": {
+      "count": 10183,
+      "percentage": 6.5
+    }
+  },
+  "geographic_distribution": {
+    "NSW": {
+      "count": 58321,
+      "percentage": 37.2
+    },
+    "VIC": {
+      "count": 41234,
+      "percentage": 26.3
+    },
+    "QLD": {
+      "count": 28765,
+      "percentage": 18.3
+    },
+    "WA": {
+      "count": 15432,
+      "percentage": 9.8
+    },
+    "SA": {
+      "count": 8765,
+      "percentage": 5.6
+    },
+    "TAS": {
+      "count": 2345,
+      "percentage": 1.5
+    },
+    "ACT": {
+      "count": 1234,
+      "percentage": 0.8
+    },
+    "NT": {
+      "count": 736,
+      "percentage": 0.5
+    }
+  },
+  "processing_notes": {
+    "llm_usage": {
+      "total_api_calls": 234567,
+      "successful_calls": 232189,
+      "failed_calls": 2378,
+      "average_response_time_ms": 1247,
+      "total_tokens_used": 45678901,
+      "estimated_cost_usd": 456.78
+    },
+    "performance_metrics": {
+      "records_per_second": 48.3,
+      "average_memory_usage_mb": 2048,
+      "peak_memory_usage_mb": 4096,
+      "database_connections_used": 15
+    },
+    "error_summary": {
+      "network_timeouts": 156,
+      "invalid_xml_records": 89,
+      "database_constraint_violations": 23,
+      "llm_api_rate_limits": 2378,
+      "parsing_errors": 45
+    }
+  }
+}

@@ -1,0 +1,14 @@
+category,metric,value,description
+processing,total_companies,3,Count of total companies
+processing,companies_with_websites,2,Count of companies with websites
+processing,high_quality_companies,2,Count of high quality companies
+quality,avg_data_quality_score,0.8433333333333333,Data quality: avg data quality score
+quality,high_quality_percentage,0.6666666666666666,Data quality: high quality percentage
+enhancement_postcode_validation,records_validated,3,postcode_validation: records validated
+enhancement_postcode_validation,corrections_applied,1,postcode_validation: corrections applied
+enhancement_postcode_validation,success_rate,1.0,postcode_validation: success rate
+enhancement_social_media_extraction,companies_analyzed,3,social_media_extraction: companies analyzed
+enhancement_social_media_extraction,social_profiles_found,2,social_media_extraction: social profiles found
+enhancement_social_media_extraction,avg_platforms_per_company,4.666666666666667,social_media_extraction: avg platforms per company
+enhancement_llm_concurrency,concurrent_requests,15,llm_concurrency: concurrent requests
+enhancement_llm_concurrency,performance_improvement,30%,llm_concurrency: performance improvement

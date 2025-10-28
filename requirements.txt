@@ -1,0 +1,53 @@
+# Core ETL and Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+sqlalchemy>=2.0.0
+snowflake-connector-python>=3.0.0
+snowflake-sqlalchemy>=1.5.0
+dbt-core>=1.6.0
+dbt-postgres>=1.6.0
+
+# Web Scraping and Data Extraction
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+scrapy>=2.11.0
+warcio>=1.7.4
+lxml>=4.9.0
+
+# Data Quality and Validation
+great-expectations>=0.17.0
+pydantic>=2.0.0
+
+# LLM Integration for Entity Matching
+openai>=1.0.0
+anthropic>=0.8.0
+langchain>=0.1.0
+sentence-transformers>=2.2.0
+
+# Async Postgres and Web API
+asyncpg>=0.29.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# Pipeline Orchestration
+apache-airflow>=2.7.0
+prefect>=2.0.0
+
+# Monitoring and Logging
+structlog>=23.1.0
+prometheus-client>=0.17.0
+
+# Configuration Management
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+moto>=4.2.0
+
+# Development Tools
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+pre-commit>=3.3.0

@@ -1,0 +1,4 @@
+[console_scripts]
+aus-abr-extract = src.extractors.abr_extractor:main
+aus-company-extract = src.extractors.common_crawl_extractor:main
+aus-company-pipeline = src.pipeline.etl_pipeline:main

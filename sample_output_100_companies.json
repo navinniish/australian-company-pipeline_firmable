@@ -1,0 +1,303 @@
+{
+  "pipeline_run_metadata": {
+    "run_id": "pipeline_run_20241023_201500",
+    "execution_date": "2024-10-23T20:15:00.000Z",
+    "llm_provider": "anthropic",
+    "llm_model": "claude-3-5-sonnet-20241022",
+    "configuration": {
+      "common_crawl_max_records": 100,
+      "abr_max_records": 100,
+      "extract_batch_size": 10,
+      "matching_batch_size": 10
+    },
+    "total_processing_time_seconds": 847,
+    "records_processed": {
+      "common_crawl_extracted": 100,
+      "common_crawl_successful": 94,
+      "common_crawl_failed": 6,
+      "abr_extracted": 100,
+      "abr_successful": 98,
+      "abr_failed": 2,
+      "potential_matches_evaluated": 9212,
+      "entity_matches_found": 78,
+      "high_confidence_matches": 65,
+      "manual_review_required": 13,
+      "final_merged_companies": 78,
+      "unmatched_common_crawl": 16,
+      "unmatched_abr": 20
+    },
+    "data_quality_summary": {
+      "avg_data_quality_score": 0.82,
+      "high_quality_records": 47,
+      "medium_quality_records": 31,
+      "low_quality_records": 0,
+      "records_with_websites": 67,
+      "records_with_emails": 45,
+      "records_with_phones": 56
+    },
+    "llm_usage": {
+      "total_api_calls": 156,
+      "successful_calls": 152,
+      "failed_calls": 4,
+      "total_tokens_used": 89234,
+      "estimated_cost_usd": 12.34,
+      "avg_response_time_ms": 1156
+    }
+  },
+  "sample_matched_companies": [
+    {
+      "company_id": "comp_001",
+      "abn": "53004085616",
+      "company_name": "Sydney Tech Solutions Pty Ltd",
+      "normalized_name": "sydney tech solutions",
+      "website_url": "https://sydneytech.com.au",
+      "industry": "Technology",
+      "address": {
+        "suburb": "Sydney",
+        "state": "NSW", 
+        "postcode": "2000"
+      },
+      "contact": {
+        "email": "info@sydneytech.com.au",
+        "phone": "(02) 8765 4321"
+      },
+      "data_quality_score": 0.94,
+      "matching_confidence": 0.96,
+      "matching_method": "llm_verified",
+      "manual_review_required": false
+    },
+    {
+      "company_id": "comp_002", 
+      "abn": "49122481205",
+      "company_name": "Melbourne Professional Services Pty Ltd",
+      "normalized_name": "melbourne professional services",
+      "website_url": "https://melbourneprofessional.com.au",
+      "industry": "Professional Services",
+      "address": {
+        "suburb": "Melbourne",
+        "state": "VIC",
+        "postcode": "3000"
+      },
+      "contact": {
+        "email": "contact@melbourneprofessional.com.au",
+        "phone": "(03) 9876 5432"
+      },
+      "data_quality_score": 0.91,
+      "matching_confidence": 0.89,
+      "matching_method": "llm_verified", 
+      "manual_review_required": false
+    },
+    {
+      "company_id": "comp_003",
+      "abn": "87654321098",
+      "company_name": "Brisbane Construction Co Pty Ltd",
+      "normalized_name": "brisbane construction co",
+      "website_url": "https://brisbanconstruction.com.au",
+      "industry": "Construction",
+      "address": {
+        "suburb": "Brisbane",
+        "state": "QLD", 
+        "postcode": "4000"
+      },
+      "contact": {
+        "email": "jobs@brisbaneconstruction.com.au",
+        "phone": "(07) 3456 7890"
+      },
+      "data_quality_score": 0.87,
+      "matching_confidence": 0.85,
+      "matching_method": "llm_verified",
+      "manual_review_required": false
+    },
+    {
+      "company_id": "comp_004",
+      "abn": "12345678903",
+      "company_name": "Perth Manufacturing Pty Ltd", 
+      "normalized_name": "perth manufacturing",
+      "website_url": null,
+      "industry": "Manufacturing",
+      "address": {
+        "suburb": "Perth",
+        "state": "WA",
+        "postcode": "6000"
+      },
+      "contact": {
+        "email": null,
+        "phone": "(08) 9123 4567"
+      },
+      "data_quality_score": 0.71,
+      "matching_confidence": 0.68,
+      "matching_method": "rule_based",
+      "manual_review_required": true
+    },
+    {
+      "company_id": "comp_005",
+      "abn": "98765432101",
+      "company_name": "Adelaide Digital Pty Ltd",
+      "normalized_name": "adelaide digital", 
+      "website_url": "https://adelaidedigital.com.au",
+      "industry": "Technology",
+      "address": {
+        "suburb": "Adelaide",
+        "state": "SA",
+        "postcode": "5000"
+      },
+      "contact": {
+        "email": "hello@adelaidedigital.com.au",
+        "phone": "(08) 8234 5678"
+      },
+      "data_quality_score": 0.88,
+      "matching_confidence": 0.92,
+      "matching_method": "llm_verified",
+      "manual_review_required": false
+    }
+  ],
+  "entity_matching_examples": [
+    {
+      "match_id": "match_001",
+      "common_crawl_record": {
+        "website_url": "https://sydneytech.com.au",
+        "extracted_name": "Sydney Tech Solutions",
+        "industry": "Technology",
+        "confidence": 0.89
+      },
+      "abr_record": {
+        "abn": "53004085616",
+        "entity_name": "Sydney Tech Solutions Pty Ltd",
+        "status": "Active",
+        "state": "NSW"
+      },
+      "matching_result": {
+        "is_match": true,
+        "similarity_score": 0.94,
+        "llm_confidence": 0.96,
+        "llm_reasoning": "Strong match: company names align perfectly with minor suffix variation (Pty Ltd), website domain matches business name, technology industry consistent, Sydney location matches.",
+        "key_factors": ["exact_name_match", "domain_alignment", "industry_consistency", "location_match"]
+      }
+    },
+    {
+      "match_id": "match_002",
+      "common_crawl_record": {
+        "website_url": "https://melbmanufacturing.com.au",
+        "extracted_name": "Melbourne Manufacturing Co",
+        "industry": "Manufacturing", 
+        "confidence": 0.76
+      },
+      "abr_record": {
+        "abn": "23456789012",
+        "entity_name": "Melbourne Manufacturing Company Pty Ltd",
+        "status": "Active",
+        "state": "VIC"
+      },
+      "matching_result": {
+        "is_match": true,
+        "similarity_score": 0.87,
+        "llm_confidence": 0.83,
+        "llm_reasoning": "Good match with name variation: 'Co' vs 'Company' are equivalent abbreviations, manufacturing industry consistent, Melbourne location aligns, domain structure supports correlation.",
+        "key_factors": ["name_abbreviation_match", "industry_consistency", "location_match", "domain_correlation"]
+      }
+    },
+    {
+      "match_id": "match_066",
+      "common_crawl_record": {
+        "website_url": "https://techsolutions.com.au",
+        "extracted_name": "Tech Solutions Australia",
+        "industry": "Technology",
+        "confidence": 0.72
+      },
+      "abr_record": {
+        "abn": "34567890123", 
+        "entity_name": "Australian Technology Consulting Pty Ltd",
+        "status": "Active",
+        "state": "NSW",
+        "trading_names": ["Tech Solutions AU"]
+      },
+      "matching_result": {
+        "is_match": false,
+        "similarity_score": 0.45,
+        "llm_confidence": 0.42,
+        "llm_reasoning": "Uncertain match: while both are technology companies, business names show significant differences. 'Tech Solutions Australia' vs 'Australian Technology Consulting' have different focus areas. Trading name 'Tech Solutions AU' is closer but still not definitive match.",
+        "key_factors": ["industry_consistency", "weak_name_correlation", "geographic_reference"],
+        "manual_review_required": true
+      }
+    }
+  ],
+  "processing_statistics": {
+    "success_rates": {
+      "common_crawl_extraction": 0.94,
+      "abr_processing": 0.98, 
+      "entity_matching": 0.78,
+      "data_quality_validation": 1.0
+    },
+    "quality_distribution": {
+      "high_quality": {
+        "count": 47,
+        "percentage": 60.3,
+        "avg_score": 0.89
+      },
+      "medium_quality": {
+        "count": 31,
+        "percentage": 39.7,
+        "avg_score": 0.74
+      },
+      "low_quality": {
+        "count": 0,
+        "percentage": 0.0,
+        "avg_score": null
+      }
+    },
+    "digital_presence": {
+      "has_website": 67,
+      "has_email": 45,
+      "has_phone": 56,
+      "has_social_media": 34,
+      "high_digital_presence": 29,
+      "medium_digital_presence": 38,
+      "low_digital_presence": 11
+    },
+    "industry_breakdown": {
+      "Technology": 18,
+      "Professional Services": 15,
+      "Construction": 12,
+      "Manufacturing": 9,
+      "Retail Trade": 8,
+      "Financial Services": 5,
+      "Healthcare": 4,
+      "Transport & Logistics": 4,
+      "Education": 2,
+      "Mining": 1
+    },
+    "state_distribution": {
+      "NSW": 21,
+      "VIC": 17, 
+      "QLD": 14,
+      "WA": 11,
+      "SA": 8,
+      "TAS": 3,
+      "ACT": 2,
+      "NT": 2
+    }
+  },
+  "errors_and_warnings": {
+    "extraction_errors": {
+      "common_crawl_failed": 6,
+      "abr_parsing_errors": 2,
+      "network_timeouts": 3,
+      "invalid_data_format": 1
+    },
+    "matching_warnings": {
+      "low_confidence_matches": 13,
+      "ambiguous_names": 7,
+      "missing_contact_info": 33,
+      "domain_unavailable": 11
+    }
+  },
+  "execution_summary": {
+    "start_time": "2024-10-23T20:15:00.000Z",
+    "end_time": "2024-10-23T20:29:07.000Z",
+    "total_duration": "14 minutes 7 seconds",
+    "average_processing_rate": "11.5 records per minute",
+    "memory_usage_peak": "1.2 GB",
+    "cpu_utilization_avg": "45%",
+    "status": "completed_successfully"
+  }
+}

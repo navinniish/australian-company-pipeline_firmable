@@ -1,0 +1,21 @@
+ australian_companies:
+   target: dev
+   outputs:
+     dev:
+       type: postgres
+       host: "{{ env_var('DATABASE_HOST', 'localhost') }}"
+       user: "{{ env_var('DATABASE_USER', 'postgres') }}"
+       password: "{{ env_var('DATABASE_PASSWORD', 'postgres_password') }}"
+       port: "{{ env_var('DATABASE_PORT', '5432') }}"
+       dbname: "{{ env_var('DATABASE_NAME', 'australian_companies') }}"
+       schema: core
+       threads: 4
+     prod:
+       type: postgres
+       host: "{{ env_var('DATABASE_HOST', 'localhost') }}"
+       user: "{{ env_var('DATABASE_USER', 'postgres') }}"
+       password: "{{ env_var('DATABASE_PASSWORD', 'postgres_password') }}"
+       port: "{{ env_var('DATABASE_PORT', '5432') }}"
+       dbname: "{{ env_var('DATABASE_NAME', 'australian_companies') }}"
+       schema: core
+       threads: 8
